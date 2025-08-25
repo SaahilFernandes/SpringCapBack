@@ -1,0 +1,15 @@
+[ {
+  "username" : "jim",
+  "password" : "$2a$10$NLr1obx7dQOthGuLWuC/Ge8k1pBk0ezCjGjE/MFjMwmUY5FEbzNBq",
+  "enabled" : true,
+  "accountNonExpired" : true,
+  "accountNonLocked" : true,
+  "credentialsNonExpired" : true
+}, {
+  "username" : "josh",
+  "password" : "$2a$10$w.GR6SKTTZr2yEibvz4BiOyY6QSiwLcVSvjGJsHQiFG2EMUL7EN8G",
+  "enabled" : true,
+  "accountNonExpired" : true,
+  "accountNonLocked" : true,
+  "credentialsNonExpired" : true
+} ]
