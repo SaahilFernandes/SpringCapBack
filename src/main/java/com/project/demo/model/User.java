@@ -1,6 +1,6 @@
 package com.project.demo.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore; // <-- IMPORT THIS
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -15,12 +15,9 @@ public class User implements UserDetails {
     private String username;
     private String password;
 
-    // Add a no-argument constructor for Jackson
     public User() {
     }
 
-    // --- Getters and Setters ---
-    // (No changes needed here)
     @Override
     public String getUsername() {
         return username;
@@ -39,11 +36,8 @@ public class User implements UserDetails {
         this.password = password;
     }
 
-
-    // --- UserDetails Methods ---
-
     @Override
-    @JsonIgnore // <-- ADD THIS ANNOTATION
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
     }

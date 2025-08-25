@@ -22,7 +22,6 @@ public class UserRepository {
     public UserRepository(@Value("${users.file.path:data/users.json}") String path) {
         this.file = new File(path);
         try {
-            // ensure dir exists
             Files.createDirectories(file.toPath().getParent());
             if (!file.exists()) {
                 mapper.writerWithDefaultPrettyPrinter().writeValue(file, new ArrayList<User>());

@@ -15,19 +15,19 @@ import java.util.Date;
 public class JwtUtil {
 
     private final Key key;
-    private final long expirationMs;
+    private final long accessTokenExpirationMs;
 
     public JwtUtil(
             @Value("${jwt.secret}") String secret,
-            @Value("${jwt.expiration-ms:3600000}") long expirationMs) {
-        // secret must be at least 32 bytes for HS256
+            @Value("${jwt.access-token.expiration-ms}") long accessTokenExpirationMs
+    ) {
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
-        this.expirationMs = expirationMs;
+        this.accessTokenExpirationMs = accessTokenExpirationMs;
     }
 
     public String generateToken(String username) {
         Date now = new Date();
-        Date exp = new Date(now.getTime() + expirationMs);
+        Date exp = new Date(now.getTime() + accessTokenExpirationMs);
         return Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(now)
@@ -42,7 +42,7 @@ public class JwtUtil {
 
     public boolean isValid(String token) {
         try {
-            getAllClaims(token); // will throw if invalid/expired
+            getAllClaims(token);
             return true;
         } catch (Exception e) {
             return false;

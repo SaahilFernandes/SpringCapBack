@@ -12,4 +12,18 @@
   "accountNonExpired" : true,
   "accountNonLocked" : true,
   "credentialsNonExpired" : true
+}, {
+  "username" : "joe",
+  "password" : "$2a$10$IN6jy8Udxmu5R.rhwTuO9eFwAyms2Rq2EZPFWaOmNjA/2iqb1ZIs2",
+  "enabled" : true,
+  "accountNonExpired" : true,
+  "accountNonLocked" : true,
+  "credentialsNonExpired" : true
+}, {
+  "username" : "jin",
+  "password" : "$2a$10$Hi3FYUYYswhaNHZvr5ljh.UZ8GvVf1NAq8sVmJG0OrCBV3j36D0fq",
+  "enabled" : true,
+  "accountNonExpired" : true,
+  "accountNonLocked" : true,
+  "credentialsNonExpired" : true
 } ]

@@ -30,7 +30,6 @@ public class UserService implements UserDetailsService {
             throw new IllegalStateException("Username is already taken");
         }
 
-        // Encode password before saving
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
 
