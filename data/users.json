@@ -1,27 +1,6 @@
 [ {
-  "username" : "jim",
-  "password" : "$2a$10$NLr1obx7dQOthGuLWuC/Ge8k1pBk0ezCjGjE/MFjMwmUY5FEbzNBq",
-  "enabled" : true,
-  "accountNonExpired" : true,
-  "accountNonLocked" : true,
-  "credentialsNonExpired" : true
-}, {
-  "username" : "josh",
-  "password" : "$2a$10$w.GR6SKTTZr2yEibvz4BiOyY6QSiwLcVSvjGJsHQiFG2EMUL7EN8G",
-  "enabled" : true,
-  "accountNonExpired" : true,
-  "accountNonLocked" : true,
-  "credentialsNonExpired" : true
-}, {
-  "username" : "joe",
-  "password" : "$2a$10$IN6jy8Udxmu5R.rhwTuO9eFwAyms2Rq2EZPFWaOmNjA/2iqb1ZIs2",
-  "enabled" : true,
-  "accountNonExpired" : true,
-  "accountNonLocked" : true,
-  "credentialsNonExpired" : true
-}, {
-  "username" : "jin",
-  "password" : "$2a$10$Hi3FYUYYswhaNHZvr5ljh.UZ8GvVf1NAq8sVmJG0OrCBV3j36D0fq",
+  "username" : "testuser",
+  "password" : "$2a$10$9tm.pkesI44BwhwfDVrA1OhXEHCJCwaoZnEzIkRv.x8s4IfPGLV7.",
   "enabled" : true,
   "accountNonExpired" : true,
   "accountNonLocked" : true,
